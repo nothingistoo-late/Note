@@ -1,0 +1,52 @@
+Dưới đây là một số ví dụ về các loại return phổ biến trong các API controllers sử dụng ASP.NET Core:
+
+return Ok(): Trả về mã trạng thái HTTP 200 (OK) với một nội dung mặc định (thường là thành công).
+
+
+
+return Ok();  // Trả về HTTP 200 OK
+return Ok(object value): Trả về mã trạng thái HTTP 200 (OK) và kèm theo dữ liệu trả về.
+
+
+
+return Ok(new { Message = "Success", Data = yourData });  // Trả về HTTP 200 OK với dữ liệu
+return NotFound(): Trả về mã trạng thái HTTP 404 (Not Found) khi không tìm thấy tài nguyên.
+
+
+
+return NotFound();  // Trả về HTTP 404 Not Found
+return Created(string uri, object value): Trả về mã trạng thái HTTP 201 (Created) và thông tin về tài nguyên mới được tạo, thường dùng khi tài nguyên mới được thêm vào.
+
+
+
+return Created("/api/resources/1", newResource);  // Trả về HTTP 201 Created
+return BadRequest(): Trả về mã trạng thái HTTP 400 (Bad Request) khi có lỗi với yêu cầu từ client.
+
+
+
+return BadRequest();  // Trả về HTTP 400 Bad Request
+return BadRequest(object error): Trả về mã trạng thái HTTP 400 với thông báo lỗi cụ thể.
+
+
+
+return BadRequest(new { Message = "Invalid data" });  // Trả về HTTP 400 Bad Request với thông báo lỗi
+return Unauthorized(): Trả về mã trạng thái HTTP 401 (Unauthorized) khi yêu cầu không có quyền truy cập.
+
+
+
+return Unauthorized();  // Trả về HTTP 401 Unauthorized
+return Forbid(): Trả về mã trạng thái HTTP 403 (Forbidden) khi server từ chối yêu cầu mặc dù người dùng đã xác thực.
+
+
+
+return Forbid();  // Trả về HTTP 403 Forbidden
+return NoContent(): Trả về mã trạng thái HTTP 204 (No Content) khi yêu cầu thành công nhưng không có dữ liệu trả về.
+
+
+
+return NoContent();  // Trả về HTTP 204 No Content
+return Conflict(): Trả về mã trạng thái HTTP 409 (Conflict) khi có xung đột với dữ liệu hiện tại.
+
+
+
+return Conflict();  // Trả về HTTP 409 Conflict
