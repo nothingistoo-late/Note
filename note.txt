@@ -1,0 +1,39 @@
+1. Công cụ và công nghệ
+Môi trường phát triển:
+Thành thạo các công cụ như NetBeans, Visual Studio 2022, và Postman để kiểm thử API.
+Sử dụng các công nghệ bạn đã học như Spring Boot và .NET 8.
+Quản lý dự án:
+Biết cách dùng Visual Paradigm để thiết kế sơ đồ Use Case.
+Hiểu rõ các tính năng của Confluence để quản lý tài liệu dự án.
+Quản lý phiên bản:
+Làm quen với các thao tác trên GitHub, đặc biệt khi làm việc trên nhiều máy hoặc với nhiều người.
+Biết xử lý merge conflict trong Visual Studio.
+2. Testing và đảm bảo chất lượng
+Unit Test:
+Tạo các lớp test bằng NUnit cho CRUD và kiểm tra API như add-new-pet, request-role-manager, và delete-pet-by-manager.
+Đảm bảo kiểm tra các trường hợp thành công, lỗi nhập liệu, và tương thích hệ thống.
+Token API:
+Lưu ý sử dụng đúng token cho các vai trò như User và Manager trong các bài test.
+Debug:
+Xử lý lỗi thiếu thông tin chi tiết khi Test Explorer không hiển thị đầy đủ.
+3. Làm việc nhóm
+Tương tác:
+Chủ động giao tiếp, hỏi đồng nghiệp hoặc mentor khi gặp khó khăn.
+Ghi nhớ luôn lưu Postman variables vào Collection, tránh gây nhầm lẫn khi làm việc nhóm.
+Git Workflow:
+Đồng bộ cấu hình trên các máy khác nhau để tránh xung đột khi chuyển nhánh.
+Kiểm tra kỹ các thay đổi trước khi commit hoặc push.
+4. Kỹ năng lập trình
+Backend:
+Hiểu sâu về các khái niệm backend, ưu tiên Spring Boot và .NET.
+Thực hành xây dựng RESTful API tuân theo nguyên tắc chuẩn.
+Database:
+Làm quen với SQL Server, đặc biệt chú ý cách thiết lập các trường tự động tăng như TourID.
+5. Thái độ và mục tiêu
+Thành tích cá nhân:
+Luôn cố gắng duy trì phong độ xuất sắc như GPA 8.98 bạn đã đạt được.
+Ghi nhận và học hỏi từ những lỗi sai để cải thiện nhanh chóng.
+Tư duy mở:
+Sẵn sàng thử nghiệm và tìm hiểu các công nghệ mới mà công ty yêu cầu.
+Kỷ luật và chuyên nghiệp:
+Hoàn thành công việc đúng deadline, không ngại làm thêm giờ để giải quyết vấn đề.
