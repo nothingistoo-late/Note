@@ -1,0 +1,25 @@
+use + (tên database)
+là chọn database mình cần sử lí
+
+select (chọn mấy cái mình cần hiển thị hoặc là chọn * để lấy hết)
+as (tên cần hiển thị để đổi)
+from (tên table)
+where (điều kiện)
+
+delete giống như select 
+
+use + (tên database)  
+là chọn database mình cần xử lý  
+
+insert into (tên table) (các cột cần thêm dữ liệu)
+values (giá trị tương ứng cho từng cột)
+là để chèn dữ liệu mới vào bảng  
+
+Ví dụ:  
+insert into Accounts (AccountId, AccountName, AccountEmail, AccountPassword, AccountRoleID)  
+values (4, 'john_doe', 'john.doe@example.com', 'password123', 'User')  
+
+Chú ý:  
+- (Tên table) là tên bảng cần chèn dữ liệu.  
+- Các cột (cột 1, cột 2, ...) phải khớp với thứ tự các giá trị (giá trị 1, giá trị 2, ...).  
+- Nếu không liệt kê cột, phải cung cấp giá trị cho toàn bộ cột của bảng.  
