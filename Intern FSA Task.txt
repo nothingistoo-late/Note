@@ -1,0 +1,26 @@
+1. Mô hình Scrum/Agile: Nắm được các khái niệm Sprint, User Story, Task/Bug, Point, Estimation. Các định nghĩa về meeting: Daily, post morterm, sprint planning, ... 
+2. Kiến thức về Backend: .NET 8 fundamental, basic C#, Web API, MVC pattern, OOP in C#, API Middleware, Dependency Injection, Service Filters, API filters, Routing in .NET MVC. 
+
+3. Kiến thức về FE: HTMl/CSS/JS basics, Bootstrap v4 (or 5). JQuery (or any new FE Framework/Lib as Angular, ReactJS, VueJS, ..)
+
+4. Những cách kết nối giữa Backend và FE: Client-server, MVC pattern (ViewBag, ViewData, ...), HTTP Method, XML ... 
+
+5. Các khái niệm về CronJob, Background jobs - Hangfire for example. 
+
+6. Emailing Method: SMTP client, kết hợp với Email Queue để gửi lượng lớn email. 
+
+7. SignalR: Gửi tin nhắn và tương tác thời gian thực (optional)
+
+8. Cloud Messaging: Gửi thông báo nổi (Google Cloud Messaging) 
+
+9. Asp .NET identity: For authentication/authorization. Thay vì ngồi làm lại hết khoảng phân quyền thì nên đọc hiểu cái này thì sẽ nhanh hơn. 
+
+10. Tìm hiểu về Unit Of Work (optional), Repository pattern, tham khảo https://github.com/lqt1912/LivelCMS . Sẽ sử dụng. 
+
+11. Tech base on Database and ORM: Entity Framework or something instead. 
+
+12. Azure Services (để deploy) và Azure Database (để giữ database) 
+
+ 
+
+Ngày mai chúng ta sẽ thảo luận về những cái này.
