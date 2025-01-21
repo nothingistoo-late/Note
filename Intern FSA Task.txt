@@ -19,6 +19,10 @@
 
 11. Tech base on Database and ORM: Entity Framework or something instead. 
 
+
+
+Học MilldeWare đi fen
+
 12. Azure Services (để deploy) và Azure Database (để giữ database) 
 
  
