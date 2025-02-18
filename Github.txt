@@ -1,0 +1,26 @@
+Cách check acc push code
+git config --local user.name // check tên người push code 
+git config --local user.email // email người push code
+
+Cách thay đổi acc push code
+git config --global user.email "email_moi@example.com" // đổi email người push code 
+git config --local user.email "nickname"// đổi tên người push code
+
+Cách Push Code lên Github
+B1. Chạy lệnh sau để xem có file nào thay đổi không: git status
+B2. Nếu bạn muốn commit tất cả file đã thay đổi: git add .
+B3. Sau đó chạy lệnh: git commit -m "Mô tả ngắn gọn về thay đổi"
+B4. Để đẩy code từ branch chitrung lên GitLab, chạy: git push origin chitrung
+B5. Nếu lần đầu push branch này, có thể cần dùng: git push --set-upstream origin chitrung
+
+Cách Clone Code từ Github về
+B1. Mở và copy url repository github cần clone.
+B2. Vào 1 Foder trống, bấm vào link folder, nhấn cmd và bấm enter.
+B3. paste cái này vào cmd : git clone <URL của repository>
+
+
+
+
+
+
+
