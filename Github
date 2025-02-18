@@ -1,0 +1,10 @@
+Cách check acc push code
+git config --local user.name // check tên người push code 
+git config --local user.email // email người push code
+
+Cách thay đổi acc push code
+git config --global user.email "email_moi@example.com" // đổi email người push code 
+git config --local user.email "nickname"// đổi tên người push code
+
+
+
