@@ -1,0 +1,6 @@
+I.cách xóa migration đã áp dụng vào database
+	b1.add-migration (tên gì gì đó)
+		để add tất cả các thay đổi chưa save
+	b2. update-database (tên migration trước migration mình muốn rollback)
+	b3. remove-migration
+spam đến khi xóa mất cái migration mình muốn xóa
