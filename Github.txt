@@ -18,6 +18,23 @@ B1. Mở và copy url repository github cần clone.
 B2. Vào 1 Foder trống, bấm vào link folder, nhấn cmd và bấm enter.
 B3. paste cái này vào cmd : git clone <URL của repository>
 
+Lưu ý khi có code mới trên main
+B1, chuyển qua nhánh của mình: git checkout chitrung
+B2. 🔄 Bước 2: Pull code mới nhất từ main về chitrung: git pull origin main
+📌 Lưu ý: Nếu có conflict, bạn phải resolve (sửa lỗi merge) trước khi tiếp tục.
+B3: Push lại lên remote chitrung để cập nhật nhánh trên GitHub: git push origin chitrung
+
+Cách check xem merge code từ branch có lỗi hay không
+B1: chuyển qua branch main: 
+	git checkout main
+	git pull origin main  # Cập nhật main với code mới nhất trên remote
+B2: thử merge: git merge --no-commit --no-ff chitrung
+nếu có lỗi thì sẽ hiện còn không thì sẽ hiện: Automatic merge went well; stopped before committing as requested
+
+
+
+
+
 
 
 
