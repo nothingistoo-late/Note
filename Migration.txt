@@ -4,3 +4,6 @@ I.cách xóa migration đã áp dụng vào database
 	b2. update-database (tên migration trước migration mình muốn rollback)
 	b3. remove-migration
 spam đến khi xóa mất cái migration mình muốn xóa
+
+Cách tải lại các nuget trong project
+Update-Package -Reinstall
