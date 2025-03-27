@@ -1,3 +1,6 @@
 visual studio short key
+
 ctr+d để bôi đen đoạn code
+
 alt + shift + F để căn chỉnh lại lề all code
+
