@@ -1,0 +1,72 @@
+**.NET Exception Cheat Sheet (Theo Nhóm - Dành cho Đại ca)**
+
+---
+
+### 🔹 1. Hệ Thống (System-level Exceptions)
+| Exception | Mô tả | Khi nào xảy ra |
+|----------|--------|----------------|
+| `OutOfMemoryException` | Hết RAM | Load file lớn, leak bộ nhớ |
+| `StackOverflowException` | Trên ngăn stack quá nhiều | Đệ quy sai, vòng lặp vô hạn |
+| `AccessViolationException` | Truy cập bộ nhớ cấm | Unsafe code, rare |
+
+---
+
+### 🔹 2. Biến & Kiểu Dữ Liệu
+| Exception | Mô tả | Khi nào xảy ra |
+|----------|--------|----------------|
+| `ArgumentException` | Tham số sai | Truyền tham số không hợp lệ |
+| `ArgumentNullException` | Null không cho phép | Truyền null vào method cần giá trị |
+| `ArgumentOutOfRangeException` | Ngoài giới hạn | Index vượt list, số > max |
+| `InvalidCastException` | Ép kiểu sai | Cast object sang kiểu sai |
+
+---
+
+### 🔹 3. Collection & File I/O
+| Exception | Mô tả | Khi nào xảy ra |
+|----------|--------|----------------|
+| `KeyNotFoundException` | Key không tồn tại | Dictionary truy cập sai key |
+| `FileNotFoundException` | File không tồn tại | Dùng path mà file đã xóa |
+| `IOException` | Lỗi thao tác file | File đang bị lock, quẳn lý lỗi I/O |
+| `DirectoryNotFoundException` | Folder không tồn tại | Folder path sai hoặc bị xóa |
+
+---
+
+### 🔹 4. Async & Task
+| Exception | Mô tả | Khi nào xảy ra |
+|----------|--------|----------------|
+| `TaskCanceledException` | Task bị huỷ | Hết timeout hoặc cancel token |
+| `OperationCanceledException` | Operation bị hủy | CancellationToken huỷ thực thi |
+| `AggregateException` | Nhiều exception | Khi Task.WhenAll() có nhiều task fail |
+
+---
+
+### 🔹 5. Mạng, HTTP, JSON
+| Exception | Mô tả | Khi nào xảy ra |
+|----------|--------|----------------|
+| `HttpRequestException` | Gửi HTTP thất bại | Timeout, sai URL, API lỗi |
+| `TimeoutException` | Quá thời gian | Gọi DB, API hoặc Task quá lâu |
+| `JsonException` | Lỗi JSON | Parse sai format, chuỗi lỗi |
+| `SocketException` | Lỗi TCP | Kết nối mạng thất bại |
+
+---
+
+### 🔹 6. Entity Framework / SQL
+| Exception | Mô tả | Khi nào xảy ra |
+|----------|--------|----------------|
+| `DbUpdateException` | SaveChanges() lỗi | Lỗi khoá chính, ràng buộc |
+| `DbUpdateConcurrencyException` | Xung đột dữ liệu | Có thay đổi trên DB trước |
+| `InvalidOperationException` | EF sai hành vi | Gọi sai method, truy vấn sai |
+| `SqlException` | Lỗi SQL Server | Kết nối, syntax, truy vấn sai (ADO.NET) |
+
+---
+
+> 🔄 **Ghi nhớ:** Bắt các exception cụ thể trước, sau đó mới bắt Exception chung.
+>
+> ✅ **Luôn validate** dữ liệu trước khi thao tác với file, API, DB.
+>
+> 📧 **Log lỗi** (ghi log hoặc hiển thị message cho user thân thiện).
+
+---
+
+**Sunny - Trợ lý backend cho Đại ca** ✨
+
